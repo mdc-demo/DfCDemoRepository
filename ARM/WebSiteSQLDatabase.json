@@ -4,6 +4,7 @@
   "parameters": {
     "hostingPlanName": {
       "type": "string",
+      "defaultValue": "bangariPlan",
       "minLength": 1
     },
     "skuName": {
@@ -36,13 +37,16 @@
       }
     },
     "administratorLogin": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "adminuser"
     },
     "administratorLoginPassword": {
-      "type": "string"
+      "type": "securestring",
+      "defaultValue": "asweht12#$%"
     },
     "databaseName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "todoDB"
     },
     "collation": {
       "type": "string",
