@@ -7,12 +7,7 @@ terraform {
         source = "hashicorp/azurerm"
       }
     }
-    /*backend "azurerm" {
-    storage_account_name = "__terraformstorageaccount__"
-    container_name       = "__container__"
-    key                  = "__terraformkey__"
-    resource_group_name           = "__backendresourcegroup__"
-    }*/
+    
     backend "azurerm" {
     storage_account_name = "bangaritfbackedn"
     container_name       = "backend-tf"
